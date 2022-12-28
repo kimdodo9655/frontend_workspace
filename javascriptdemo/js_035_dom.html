@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_035_dom</title>
+    <script defer type="text/javascript" src="js/js_035_dom.js"></script>
+    <style>
+        /* #selector{}   .choice() */
+        /*p:nth-of-type(1){
+         background-color:'yellow'
+        } */
+    </style>
+</head>
+
+<body>
+    <h1 id="selector" class="choice">선택자</h1>
+
+    <p>content 1</p>
+    <p>content 2</P>
+    <p>content 3</P>
+    <p>content 4</P>
+
+    <form name='frm'>
+        <input type='text' name='fname' placeholder='이름입력' value="홍길동" />
+        <input type='text' name='fpass' placeholder='비밀번호입력' />
+        <button onclick='return process()'>click</button>
+    </form>
+
+    <script>
+        let hElement = document.getElementById('selector');
+        document.write(hElement + ' ' + typeof hElement); // [object HTMLHeadingElement] object
+    </script>
+</body>
+
+</html>

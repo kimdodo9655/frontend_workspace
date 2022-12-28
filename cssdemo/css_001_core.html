@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_001_core</title>
+
+    <style>
+        /*
+        selector {
+            속성명 : 속성값;
+            속성명 : 속성값;
+        }
+
+        core 속성 : 여러 요소에서 공통적으로 사용되는 속성
+                    단, html, head, meta, script, style, title 요소에서는 사용 불가능 하다.
+        id속성 :    특정 요소에 고유값을 지정할 때
+        class속성 : 여러 요소들을 그룹화 할때 사용
+        style속성 : 요소에 직접 스타일을 적용할 때 사용
+        title속성 : 요소에 설명을 지정할 때 사용
+        */
+
+        p {
+            background-color: #333;
+            color: #999;
+        }
+
+        .test {
+            width: 100px;
+            height: 100px;
+            border: 5px solid #ffb700;
+            background-color: #7151d0;
+        }
+    </style>
+</head>
+
+<body>
+    <p class='test'>item 1</p>
+    <p>item 2</p>
+    <p>item 3</p>
+    <p>item 4</p>
+    <div class='test'>box</div>
+</body>
+
+</html>

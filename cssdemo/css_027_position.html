@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+            border-width: 0;
+        }
+
+        .box1 {
+            width: 500px;
+            height: 100px;
+            background-color: black;
+        }
+
+        .box2 {
+            width: 500px;
+            height: 200px;
+            background-color: yellow;
+            position: relative;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            /* 부모의 포지션 값이 스태틱이면 바디를 기준으로 한다 */
+            left: 50px;
+            top: 50px;
+        }
+
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+            top: 0px;
+            left: 200px;
+        }
+
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            right: 10px;
+            top: 50px;
+            position: fixed;
+            /* 스크롤바가 이동해도 요소는 움직이지 않음 * 브라우저를 기준으로 좌표값 이동 */
+        }
+
+        .box6 {
+            width: 800px;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        /* 
+        포지션(position)
+        1. 박스에 대한 배치를 변경할 때 사용된다.
+        2. 종류
+            1) static : 순서에 의한 기본 위치를 지정한다
+            2) absolute : 부모 요소를 기준으로 위치를 지정한다. (원래의 위치값을 잃는다.)
+            3) relative : 자기 자신을 기준으로 위치를 지정한다. (원래의 위치값을 가지고 있는다.)
+            4) fixed: 스크린을 기준으로 위치를 지정한다. (원래의 위치값을 잃는다.)
+        3. absolute의 위치 지정
+            부모 요소의 position이 static이면 기준점이 body가 된다.
+            부모 요소의 position이 absolute, fixed, relative이면 기준점이 부모요소가 된다.
+            
+            
+        */
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2">
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <p>요소들의 위치변경</p>
+    </div>
+    <div class="box5"></div>
+    <div class="box6">
+        아기 상어 뚜루루 뚜루 귀여운 바다속 아기상어! 아기 상어 뚜루루 뚜루 귀여운 바다속 아기상어! 아기 상어 뚜루루 뚜루 귀여운 바다속 아기상어! 아기 상어 뚜루루 뚜루 귀여운 바다속 아기상어! 아기
+        상어 뚜루루 뚜루 귀여운 바다속 아기상어! 아기 상어 뚜루루 뚜루 귀여운 바다속 아기상어!
+    </div>
+</body>
+
+</html>

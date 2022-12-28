@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_009_datatype</title>
+</head>
+
+<body>
+    <script>
+        /*
+            datatype
+            primitive datatype : 기본 데이터 타입
+            reference datatype : 참조 데이터 타입
+        */
+
+        let num = 3;
+        console.log(typeof num); // number
+        // console.log(typeof (num));
+        let nobject = new Number(3);
+        console.log(typeof nobject); // object
+        console.log(nobject instanceof Number); // true
+
+        num = '3';
+        console.log(typeof num); // string
+        console.log(num + 2); // 32
+
+        let avg = 4.5;
+        console.log(typeof avg); // number
+
+        let check = true;
+        console.log(typeof check); // boolean
+
+        let name = null;
+        console.log(typeof name); // object
+
+        let na = undefined;
+        console.log(`na = ${na}, ${typeof na}`); // na = undefined, undefined
+
+        let loc = new String('node');
+        console.log(`loc = ${loc}, ${typeof loc}`); // loc = node, object
+        console.log(loc instanceof String); // true
+
+        let jumsu = new Number(10);
+        console.log(`jumsu = ${jumsu}, ${typeof jumsu}`); // jumsu = 10, object
+        console.log(jumsu instanceof Number); // true
+
+        // 익명 함수 : 변수에 선언 됨
+        let fn = function () {
+            console.log('function');
+        }
+        console.log(`fn = ${fn}, ${typeof fn}`);
+        /*
+        fn = function () {
+            console.log('function');
+        }, function
+        */
+
+        let arr = [1, 2, 3];
+        console.log(`arr=${arr}, ${typeof arr}`); // arr=1,2,3, object
+        console.log(arr instanceof Array); // true
+
+        let customer = { name: '홍길동', age: 30 }
+        console.log(`customer=${customer}, ${typeof customer}`); // customer=[object Object], object
+        console.log(customer instanceof Object); // true
+        console.log(`${customer.name}, ${customer.age}`); // 홍길동, 30
+    </script>
+</body>
+
+</html>

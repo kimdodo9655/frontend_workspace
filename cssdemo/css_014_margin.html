@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border-width: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            width: 160px;
+            height: 260px;
+            background-color: #999999;
+        }
+
+        .aa {
+            width: 100px;
+            height: 100px;
+            background-color: #ffbcbc;
+            border-top: 10px solid #666;
+            border-bottom: 10px solid #666;
+            margin-bottom: 10px;
+        }
+
+        .bb {
+            width: 100px;
+            height: 100px;
+            background-color: #b8b8ff;
+            border-top: 10px solid #666;
+            border-bottom: 10px solid #666;
+            margin-top: 10px;
+        }
+
+        span.sp1 {
+            font-size: 21px;
+            background-color: #ffd139;
+        }
+
+        span.sp2 {
+            font-size: 21px;
+            background-color: #46ffaf;
+            margin-left: 10px;
+            /* left, right 적용됨 */
+            margin-top: 10px;
+            /* top, bottom 적용 안됨 */
+        }
+
+        div.line {
+            border: 5px solid #ff6afa;
+        }
+
+        div#m1 {
+            width: 80px;
+            height: 80px;
+            background-color: #545491;
+            /* div#m2의 margin 값이 top에 적용되도록 하기 위해서 설정 */
+            padding: 10px
+        }
+
+        div#m2 {
+            width: 80px;
+            height: 80px;
+            background-color: #ffffa3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="aa">one</div>
+        <div class="bb">two</div>
+    </div>
+
+    <div class="inline">
+        <span class="sp1">span1</span><span class="sp2">span2</span>
+    </div>
+
+    <div class="line">line</div>
+
+    <div id="m1">
+        <div id="m2">box</div>
+    </div>
+
+
+</body>
+
+</html>

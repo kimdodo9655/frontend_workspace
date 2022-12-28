@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            border-width: 0;
+            position:relative;
+        }
+        a:link{
+            text-decoration: none;
+            color:white;
+        }
+        li, a {
+            float:left;
+            text-decoration: none;
+            list-style-type: none;
+            margin-left:20px;
+        }
+        .wrap {
+            width:1920px;
+            height:930px;
+            background-color: yellow;
+        }
+        #header {
+            width:1920px;
+            height: 120px;
+            background-color: whitesmoke;
+            top : 0px;
+            left : 0px;
+            position:absolute;
+        }
+        #nav {
+            width:1920px;
+            height: 70px;
+            background-color: black;
+            clear:both;
+
+        }
+        #section {
+            width:1920x;
+            height: 670px;
+            background-color: olive;
+            clear:both;
+        }
+        #footer {
+            width:1920px;
+            height:70px;
+            background-color: navy;
+            clear:both;
+        }
+        .box1_1 {
+            width:600px;
+            height:110px;
+            float:left;
+            border:1px solid black;
+        } 
+        .box1_2 {
+            width:600px;
+            height:110px;
+            float:left;
+            border:1px solid black;
+        }
+        .box1_3 {
+            width:700px;
+            height: 110px;
+            border:1px solid black;
+            float:left;
+        } 
+        .box2 {
+            border:1px solid black;
+            font:white;
+        }
+        dl.menulist dd{
+            float:left;
+            border: 2px solid;            
+            border-left-width:0px;
+            font:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1" id='header'></div>
+            <div class='box1_1' id='logo'><a href='#'><img src='images/logo.gif' alt='로고'></a></div>
+            <div class='box1_2' id='search'>serch</div>
+            <div class='box1_3' id='login-menu'>
+                <ol class='login-menu' id='login-menu'>
+                    <l1>로그인</l1>
+                    <li>회원가입</li>
+                    <li>마이페이지</li>
+                    <li>이용안내</li>
+                    <li>고객센터</li>
+                </ol>
+            </div>
+        <div>
+        <div class="box2" id='nav'>
+            <dl class='menulist' id='menulist'>
+                <dt>
+                    <dd id='detailed'><a href="#">상세페이지</a></dd>
+                    <dd id='basket'><a href="#">장바구니</a></dd>
+                    <dd id='gallery'><a href="#">고객갤러리</a></dd>
+                    <dd id='shipping'><a href="#"> 주문배송</a></dd>
+                    <dd id='qna'><a href="#">자주하는질문</a></dd>
+                </dt>
+            </dl> 
+        </div>
+        <div class="box3" id='section'>section</div>
+        <div class="box4" id='footer'>footer</div>
+    </div>
+</body>
+</html>

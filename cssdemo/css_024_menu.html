@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 수평 네비게이션 */
+        * {
+            margin: 0;
+            padding: 0;
+            border-width: 0;
+        }
+
+        body {
+            margin-left: 10px;
+        }
+
+        .menulist {
+            width: 294px;
+            height: 34px;
+            /* background-color: yellow; */
+            border-left: 2px solid;
+        }
+
+        dl.menulist dt {
+            width: 0;
+            height: 0;
+            font-size: 0;
+            text-indent: -2000px;
+        }
+
+        dl.menulist dd {
+            float: left;
+            border: 2px solid;
+            border-left-width: 0px;
+        }
+
+        dl.menulist dd a {
+            display: block;
+            width: 96px;
+            height: 30px;
+            text-align: center;
+            text-decoration: none;
+            font: bold 21px/30px, "나눔고딕", "돋움", "돋움체";
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        dl.menulist dd a:hover {
+            text-decoration: underline;
+            font-size: 20px;
+            font-weight: bolder;
+            letter-spacing: -1px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <dl class='menulist'>
+            <dt>메뉴목록</dt>
+            <dd><a href="#">교육센터</a></dd>
+            <dd><a href="#">교육안내</a></dd>
+            <dd><a href="#">교육일정</a></dd>
+        </dl>
+    </nav>
+</body>
+
+</html>

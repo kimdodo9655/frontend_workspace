@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_019_checked</title>
+</head>
+
+<body>
+    <!--
+        <input> 태그의 type속성이 checkbox면 체크박스를, radio면 라디오 버튼을 표시한다.
+    -->
+
+    <form action='#'>
+        <h3>체크박스</h3>
+        <input type='checkbox' name='subject' value='java' id="a" /><label for="a">자바</label>
+        <input type='checkbox' name='subject' value='database' checked='checked' />데이터베이스
+        <input type='checkbox' name='subhect' value='spring' />스프링
+
+        <br>
+
+        <h3>라디오 버튼</h3>
+        <input type='radio' name='fruit' value='apple' />사과
+        <input type='radio' name='fruit' value='melon' />메론
+        <input type='radio' name='fruit' value='grape' checked='checekd' />포도
+
+        <p>
+            <input type='reset' value='cancle' />
+            <input type='submit' value='commit' />
+        </p>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* nth-child(n)와 nth-of-type(n) */
+
+        p:nth-child(2) {
+            /* 모든 자식요소 중 p가 2번째일 경우 적용 */
+            background-color: red;
+        }
+
+
+        p:nth-of-type(2) {
+            /* 자식인 p 중 2번째 */
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>computer</p>
+        <span>test</span>
+        <p>moniter</p>
+        <p>television</p>
+        <p>desk</p>
+        <p>top</p>
+    </div>
+</body>
+
+</html>
